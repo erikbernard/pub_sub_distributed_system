@@ -1,0 +1,36 @@
+{
+  "name": "zeromq",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsx src/server.ts",
+    "start:pubber": "tsx watch src/pubber.ts",
+    "start:subber": "tsx watch src/subber.ts",
+    "ts:server": "tsnd --respawn --transpile-only src/server.ts",
+    "ts:subber": "tsnd --respawn --transpile-only src/subber.ts",
+    "ts:pubber": "tsnd --respawn --transpile-only src/pubber.ts",
+    "build": "tsup src",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/zeromq": "^5.2.2",
+    "ts-node-dev": "2.0.0",
+    "tsup": "^6.5.0",
+    "tsx": "3.12.7",
+    "typescript": "^5.0.4",
+    "vitest": "0.31.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "zeromq": "^5.3.1",
+    "zod": "3.21.4"
+  }
+}
